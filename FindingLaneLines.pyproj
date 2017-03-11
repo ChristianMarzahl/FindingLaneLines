@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ac67e681-9651-4ad9-9707-2e379c7b9b44</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>FindingLaneLines.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>FindingLaneLines</Name>
+    <RootNamespace>FindingLaneLines</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FindingLaneLines.py" />
+    <Compile Include="HoughTransform.py" />
+    <Compile Include="TrackBarExperiment.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="P1.ipynb" />
+    <Content Include="pipeline_images\argumentation\solidWhiteCurve.jpg" />
+    <Content Include="pipeline_images\argumentation\solidWhiteRight.jpg" />
+    <Content Include="pipeline_images\argumentation\solidYellowCurve.jpg" />
+    <Content Include="pipeline_images\argumentation\solidYellowCurve2.jpg" />
+    <Content Include="pipeline_images\argumentation\solidYellowLeft.jpg" />
+    <Content Include="pipeline_images\argumentation\whiteCarLaneSwitch.jpg" />
+    <Content Include="pipeline_images\hough\solidWhiteCurve.jpg" />
+    <Content Include="pipeline_images\hough\solidWhiteRight.jpg" />
+    <Content Include="pipeline_images\hough\solidYellowCurve.jpg" />
+    <Content Include="pipeline_images\hough\solidYellowCurve2.jpg" />
+    <Content Include="pipeline_images\hough\solidYellowLeft.jpg" />
+    <Content Include="pipeline_images\hough\whiteCarLaneSwitch.jpg" />
+    <Content Include="pipeline_images\hsv\Parameter\white_1.png" />
+    <Content Include="pipeline_images\hsv\Parameter\white_2.png" />
+    <Content Include="pipeline_images\hsv\Parameter\white_3.png" />
+    <Content Include="pipeline_images\hsv\Parameter\white_4.png" />
+    <Content Include="pipeline_images\hsv\Parameter\white_5.png" />
+    <Content Include="pipeline_images\hsv\Parameter\yellow_1.png" />
+    <Content Include="pipeline_images\hsv\Parameter\yellow_2.png" />
+    <Content Include="pipeline_images\hsv\Parameter\yellow_3.png" />
+    <Content Include="pipeline_images\hsv\Parameter\yellow_4.png" />
+    <Content Include="pipeline_images\hsv\solidWhiteRight.jpg" />
+    <Content Include="pipeline_images\hsv\solidYellowCurve.jpg" />
+    <Content Include="pipeline_images\hsv\solidYellowCurve2.jpg" />
+    <Content Include="pipeline_images\hsv\solidYellowLeft.jpg" />
+    <Content Include="pipeline_images\hsv\whiteCarLaneSwitch.jpg" />
+    <Content Include="README.md" />
+    <Content Include="test_images\solidWhiteCurve.jpg" />
+    <Content Include="test_images\solidWhiteRight.jpg" />
+    <Content Include="test_images\solidYellowCurve.jpg" />
+    <Content Include="test_images\solidYellowCurve2.jpg" />
+    <Content Include="test_images\solidYellowLeft.jpg" />
+    <Content Include="test_images\whiteCarLaneSwitch.jpg" />
+    <Content Include="videos\challenge.mp4" />
+    <Content Include="videos\solidWhiteRight.mp4" />
+    <Content Include="videos\solidYellowLeft.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="videos\" />
+    <Folder Include="pipeline_images\" />
+    <Folder Include="pipeline_images\argumentation\" />
+    <Folder Include="pipeline_images\hough\" />
+    <Folder Include="pipeline_images\hsv\" />
+    <Folder Include="pipeline_images\hsv\Parameter\" />
+    <Folder Include="test_images\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
